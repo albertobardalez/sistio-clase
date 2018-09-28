@@ -1,0 +1,33 @@
+/*estilos.css*/
+
+/* 1* declaro variables en la raiz de nuestro sitio para poder usarlas en cualquier lado*/
+:root{
+	/*le pongo --para identificar que es una variable */
+	--blanco: #fff;
+	--negro: #000;
+	--naranja: #f90;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+	background-image: url(images/pattern.jpg);
+}
+
+.cabecera{
+	margin: auto;
+	max-width: 1000px;
+
+}
+
+.contenido{
+	margin: auto;
+	max-width: 1000px;
+	/* 2* paso usamos la variable 
+	 le agregamos entre var()*/
+	background-color: var(--blanco)
+}
