@@ -5,9 +5,9 @@
 	/*le pongo --para identificar que es una variable */
 	--blanco: #fff;
 	--negro: #000;
-	--naranja: #f90;
+	--naranja: #f90; 
+	}
 
-}
 *{
 	margin: 0;
 	padding: 0;
@@ -16,18 +16,91 @@
 body{
 	font-family: arial;
 	background-image: url(images/pattern.jpg);
+
 }
 
-.cabecera{
+
+
+
+ 
+/*-----------------------------
+ cabecera
+ --------------------------------*/
+ .cabecera{
+ 	height: 100px;
 	margin: auto;
 	max-width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+	margin-bottom: 15px;
 
 }
+.cabecera a{
 
+}
+.cabecera h1{
+	color: var(--naranja);
+
+}
 .contenido{
 	margin: auto;
 	max-width: 1000px;
+	border-radius: 8px 8px 0 0;
 	/* 2* paso usamos la variable 
 	 le agregamos entre var()*/
-	background-color: var(--blanco)
+	background-color: var(--blanco);
 }
+/*.nav-lista{
+
+	display: flex;
+	 background-color:   var(--naranja);
+	 padding: 25px;
+	 border-radius: 15px;
+	 
+	 list-style-type: none;
+	 margin: 10px;
+	 
+	 align-content: center; 
+}*/
+.nav{
+	background-color: var(--naranja);
+	border-radius: 8px 8px 0 0;
+	/* 1* top y bottom
+	2* lef y right */
+	padding: 10px 40px;
+	margin-bottom: 30px;
+	
+}
+.nav-lista{
+	list-style-type: none;
+	display: flex;
+
+}
+.nav-lista a{
+
+	display: block;
+	color:var(--blanco);
+	text-decoration:none;
+	font-weight: bold;
+	padding: 7px 12px;
+	border-right: 1px solid var(--blanco);
+
+}
+.nav-lista a: hover{
+	text-decoration:underline;
+
+}
+/*-----------------------------
+ slaider// carrousel
+ --------------------------------*/
+ .slider{
+ 	text-align:center;
+ 	margin-bottom: 50px;
+ }
+
+
+
+
+
